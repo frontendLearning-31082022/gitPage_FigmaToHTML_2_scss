@@ -1,0 +1,58 @@
+
+.items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.88vw;
+}
+
+.item {
+	aspect-ratio: 360/587;
+}
+
+.item>img {
+	max-width: 100%;
+}
+
+.item_image {
+	background-size: cover;
+	width: 100%;
+	aspect-ratio: 360 / 420;
+}
+
+
+.btn_show_all_items {
+	width: 13.25vw;
+	min-width: 212px;
+	height: 3vh;
+	min-height: 48px;
+	display: block;
+	margin-bottom: 3.75vh;
+}
+
+@media (max-width: 768px) {
+	.items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.88vw;
+	}
+}
+
+@media (max-width: 481px) {
+	.items {
+		grid-template-columns: var(--content_width);
+		gap: 4.27vw;
+	}
+
+	.item>img {
+		width: 100%;
+	}
+
+	.item {
+		aspect-ratio: auto;
+	}
+
+	.btn_show_all_items {
+		margin-top: 10.93vw;
+		margin-bottom: 22.67vw;
+	}
+}

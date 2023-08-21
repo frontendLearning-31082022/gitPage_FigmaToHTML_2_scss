@@ -1,0 +1,19 @@
+@import "../utils/position";
+
+.breadcrumb>ol>* {
+    display: inline-block;
+}
+
+.breadcrumb_container {
+    height: 9.25vh;
+    background: #F8F3F4;
+}
+
+.breadcrumb_content {
+    display: flex;
+    justify-content: space-between;
+    width: $content_width;
+    @include centerByMargin;
+    height: 100%;
+    align-items: center;
+}

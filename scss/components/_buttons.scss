@@ -1,0 +1,36 @@
+@mixin btn_add_to_cart {
+    content: 'Add to Cart';
+    border: 1px solid #FF6A6A;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F26376;
+    background-color: #fbfbfb;
+    background-image: url("../../img/shop_cart.svg");
+    background-repeat: no-repeat;
+    background-size: 26px 24px;
+    // background-size: cover;
+    aspect-ratio: 21200/4841;
+    width: 212px;
+    background-position: 11.32% 31.25%;
+}
+
+@mixin big_logo__btn_prev {
+    background-image: url("../../img/big_logo__btn_prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+}
+
+@mixin big_logo__btn_next {
+    background-image: url("../../img/big_logo__btn_next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+}

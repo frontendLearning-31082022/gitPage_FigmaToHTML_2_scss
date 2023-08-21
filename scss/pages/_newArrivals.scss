@@ -1,0 +1,108 @@
+@import "../components/item_customization";
+@import "../components/buttons";
+@import "../components/items";
+@import "../utils/position";
+
+.big_logo__container {
+    background-color: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    height: 48.56vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .big_logo__btn_prev {
+        @include big_logo__btn_prev;
+    }    
+    .big_logo__btn_next {
+        @include big_logo__btn_next;    
+    }
+
+    .big_logo__content,
+    img {
+        height: inherit;
+        text-align: center;
+    }
+}
+
+.product_current {
+    text-align: center;
+    margin-bottom: 192.5px;
+
+    .group_name {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        align-items: center;
+    }
+
+    .group_name::after {
+        content: "";
+        width: 63px;
+        background: #EF5B70;
+        display: block;
+        aspect-ratio: 6300 / 303;
+        margin-top: 12.1px;
+    }
+
+    .product_description {
+        margin-bottom: 130px;
+    }
+
+    .product_description .title {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+    }
+
+    .product_description .descrp_full {
+        width: 555px;
+        display: inline-block;
+
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5E5E5E;
+    }
+
+    .price {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+    }
+
+    
+    .product_description::after {
+        content: "";
+        width: 642px;
+        background: #EAEAEA;
+        display: block;
+        aspect-ratio: 64200 / 101;
+    }
+
+    .item_customization {
+        margin-bottom: 46.4px;
+    }
+
+    .btn_add_to_cart {
+        @include btn_add_to_cart;
+    }
+
+  
+
+}
+
+.items {
+    width: $content_width;
+    @include centerByMargin;
+    margin-bottom: 128px;
+}

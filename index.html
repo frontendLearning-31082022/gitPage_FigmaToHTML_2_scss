@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__navbar_control center">
+                <div class="header__navbar_left">
+                    <a href="#"><img src="img/navbar_mini_logo.svg" alt="navbar_mini_logo"></a>
+                    <img onclick="location.href='#';" src="img/navbar_search_icon.svg" alt="navbar_search_icon">
+                </div>
+                <div class="header__navbar_right">
+                    <img class="btn_menu"
+                        onclick="document.getElementsByClassName('menu')[0].style.display==='' ? document.getElementsByClassName('menu')[0].style.display='none' : document.getElementsByClassName('menu')[0].style.display=''"
+                        src="img/navbar_menu_logo.svg" alt="menu">
+                    <img onclick="location.href='#';" src="img/navbar_profile_icon.svg" alt="profile_icon"
+                        class="btn_profile">
+                    <img onclick="location.href='#';" src="img/navbar_shop_cart_icon.svg" alt="shop_cart"
+                        class="btn_cart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb_container">
+
+        <div class="breadcrumb_content">
+            <div class="breadcrumb_current" itemscope itemtype="http://localhost/BreadcrumbList" itemprop="item">
+                <span itemprop="title">NEW ARRIVALS</span>
+                <meta itemprop="url" content="CURRENT URL" />
+            </div>
+
+
+            <div class="breadcrumb">
+                <ol itemscope itemtype="https://localhost/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://localhost/ListItem">
+                        <a itemprop="item" href="https://localhost/">
+                            <span itemprop="name">HOME</span></a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    /
+                    <li itemprop="itemListElement" itemscope itemtype="https://localhost/ListItem">
+                        <a itemscope itemtype="https://localhost/WebPage" itemprop="item" itemid="https://localhost/men"
+                            href="https://localhost/men">
+                            <span itemprop="name">MEN</span></a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                    /
+                    <li itemprop="itemListElement" itemscope itemtype="https://localhost/ListItem">
+                        <a itemscope itemtype="https://localhost/WebPage" itemprop="item"
+                            itemid="https://localhost/newArrivals" href="https://localhost/newArrivals">
+                            <span itemprop="name">NEW ARRIVALS</span></a>
+                        <meta itemprop="position" content="3" />
+                    </li>
+                </ol>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="big_logo__container">
+        <button class="big_logo__btn_prev"></button>
+        <div class="big_logo__content">
+            <img src="/img/big_logo.png">
+        </div>
+        <button class="big_logo__btn_next"></button>
+    </div>
+
+    <div class="product_current">
+        <div class="product_description">
+            <h5 class="group_name">WOMEN COLLECTION</h5>
+            <h3 class="title">MOSCHINO CHEAP AND CHIC</h3>
+            <p class="descrp_full">Compellingly actualize fully researched processes before proactive outsourcing.
+                Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
+                parallel core competencies rather than exceptional portals. </p>
+            <h1 class="price">$561</h1>
+        </div>
+
+        <div class="item_customization">
+            <span>CHOOSE COLOR</span>
+            <span>CHOOSE SIZE</span>
+            <span>QUANTITY</span>
+        </div>
+
+        <button class="btn_add_to_cart">Add to Cart</button>
+    </div>
+
+    <div class="items">
+        <div class="item" onclick="location.href='#';">
+            <div style="background-image: url(img/future_item_1.svg);" title="cloth image" class="item_image"></div>
+            <h5>ELLERY&nbsp;X&nbsp;M&rsquo;O&nbsp;CAPSULE</h5>
+            <p class="descrp_item">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter
+                of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+            <p class="price_item">$52.00</p>
+        </div>
+        <div class="item" onclick="location.href='#';">
+            <div style="background-image: url(img/future_item_2.svg);" title="cloth image" class="item_image"></div>
+            <h5>ELLERY&nbsp;X&nbsp;M&rsquo;O&nbsp;CAPSULE</h5>
+            <p class="descrp_item">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter
+                of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+            <p class="price_item">$52.00</p>
+        </div>
+        <div class="item" onclick="location.href='#';">
+            <div style="background-image: url(img/future_item_3.svg);" title="cloth image" class="item_image"></div>
+            <h5>ELLERY&nbsp;X&nbsp;M&rsquo;O&nbsp;CAPSULE</h5>
+            <p class="descrp_item">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter
+                of&nbsp;
+                cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+            <p class="price_item">$52.00</p>
+        </div>
+
+    </div>
+
+
+    
+<div class="footer">
+
+    <div class="subscribe">
+        <div class="subscribe_content center">
+            <div class="about">
+                <img src="img/subscribe_photo.svg" alt="subscribe us">
+                <p>&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&raquo;</p>
+            </div>
+
+            <div class="subscribe_action">
+                <h1>SUBSCRIBE</h1>
+                <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
+                <div class="subscribe_form">
+                    <form action="#">
+                        <input type="text" value="Enter Your Email">
+                        <button onclick="location.href='#';">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer_end">
+        <div class="footer_end_content center">
+            <h4>&copy;&nbsp;2021 Brand All Rights Reserved.</h4>
+            <div class="social_links">
+                <a href="#"><img src="img/social_link_1.svg" alt="pin"></a>
+                <a href="#"><img src="img/social_link_2.svg" alt="twit"></a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

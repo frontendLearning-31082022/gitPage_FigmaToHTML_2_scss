@@ -1,0 +1,30 @@
+.item_customization {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    justify-content: center;
+
+    span::after {
+        background-image: url("../../img/item_customization__arrow_down.svg");
+        background-repeat: no-repeat;
+        aspect-ratio: 1002 / 505;
+        width: 10px;
+
+        content: "";
+        display: inline-block;
+
+        margin-left: 10px;
+    }
+
+    span {
+        align-items: center;
+        display: flex;
+    }
+}
