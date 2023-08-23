@@ -1,0 +1,6 @@
+@import "../utils/position";
+
+.content { 
+    @include centerByMargin;
+    width: $content_width;
+}

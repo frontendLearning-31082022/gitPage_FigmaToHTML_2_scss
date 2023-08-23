@@ -1,6 +1,4 @@
-.header__navbar {
-    background: #222222;
-}
+
 
 .big_adv_text {
     font-family: 'Lato';
@@ -98,23 +96,6 @@ p.price_item {
     cursor: pointer;
 }
 
-.footer__adv_item>h3 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
-}
-
-.footer__adv_item>p {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-    color: #FBFBFB;
-}
 
 .subscribe_content>.about>p {
     font-family: 'Lato';
@@ -166,15 +147,6 @@ p.price_item {
 }
 
 
-.footer_end_content h4 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-}
-
 .menu {
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -202,25 +174,6 @@ p.price_item {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-}
-
-.breadcrumb_current {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-}
-
-.breadcrumb * {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-    text-decoration: none;
 }
 
 ol li:last-child * {
