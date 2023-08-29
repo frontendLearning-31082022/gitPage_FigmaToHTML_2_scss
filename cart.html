@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="importHTML.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div w3-include-HTML="navbar.html"></div>
+    </div>
+
+    <div class="breadcrumb_container">
+        <div class="breadcrumb_content">
+            <div class="breadcrumb_current" itemscope itemtype="http://localhost/BreadcrumbList" itemprop="item">
+                <span itemprop="title">SHOPPING CART</span>
+                <meta itemprop="url" content="CURRENT URL" />
+            </div>
+        </div>
+    </div>
+
+    <div class="cart__content">
+        <div class="cart__items">
+            <div class="cart__item">
+                <img src="/img/cart__item_image_1.svg" alt="item for sell image">
+                <div class="cart__item_content">
+                    <h1>MANGO PEOPLE T&#8209;SHIRT</h1>
+                    <div class="properties">
+                        <span class="price">Price:&#160;<span class="price_value">$300</span></span>
+                        <span class="color">Color:&#160;<span class="color_value">Red</span></span>
+                        <span class="size">Size:&#160;<span class="size_value">Xl</span></span>
+                        <span class="count">Quantity:&emsp;<span class="count_value">2</span></span>
+                    </div>
+                </div>
+                <button class="cart__item_button_remove"></button>
+            </div>
+            <div class="cart__item">
+                <img src="/img/cart__item_image_2.svg" alt="item for sell image">
+                <div class="cart__item_content">
+                    <h1>MANGO PEOPLE T&#8209;SHIRT</h1>
+                    <div class="properties">
+                        <span class="price">Price:&#160;<span class="price_value">$300</span></span>
+                        <span class="color">Color:&#160;<span class="color_value">Red</span></span>
+                        <span class="size">Size:&#160;<span class="size_value">Xl</span></span>
+                        <span class="count">Quantity:&emsp;<span class="count_value">2</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__adress_input">
+            <form action="#">
+                <h4>SHIPPING ADRESS</h4>
+
+                <input type="text" placeholder="Bangladesh">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <button onclick="location.href='#';">GET A QUOTE</button>
+            </form>
+        </div>
+
+        <div class="cart__summary_bill">
+            <div class="sub_total">SUB TOTAL&#160;
+                <span class="sub_total_value">$900</span>
+            </div>
+            <div class="grand_total">GRAND TOTAL&#160;
+                <span class="grand_total_value">$900</span>
+            </div>
+            <div class="cart__button_proceed">
+                <button onclick="location.href='#';">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+
+        <div class="cart__control_buttons">
+            <button>CLEAR SHOPPING CART</button>
+            <button>CONTINUE SHOPPING</button>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div w3-include-HTML="footer.html"></div>
+    </div>
+
+</body>
+
+</html>
