@@ -113,12 +113,23 @@
 .subscribe_action input[type="text"] {
 	width: 65.45%;
 	margin-left: 6.18%;
+	background: inherit;
+    border: none;
+	outline: none;
 }
 
 .subscribe_form form {
 	display: flex;
 	height: 100%;
 	align-items: center;
+
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+
 }
 
 .footer_end_content {
