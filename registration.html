@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <script src="js/importHTML.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div w3-include-HTML="/global_modules/navbar.html"></div>
+    </div>
+
+    <div class="breadcrumb_container">
+        <div class="breadcrumb_content">
+            <div class="breadcrumb_current" itemscope itemtype="http://localhost/BreadcrumbList" itemprop="item">
+                <span itemprop="title">REGISTRATION</span>
+                <meta itemprop="url" content="CURRENT URL" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="registration__content">
+        <div class="reg_form">
+            <h4>Your Name</h4>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <div class="gender_switch">
+                <form>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </form>
+            </div>
+            <h4>Login details</h4>
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Password">
+            <p class="input_rules">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <button class="swipe" data-text="JOIN NOW    →"><span>JOIN NOW</span></button>
+        </div>
+        <div class="reg_info">
+            <h1>LOYALTY HAS ITS PERKS</h1>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div w3-include-HTML="/global_modules/footer.html"></div>
+    </div>
+
+</body>
+
+</html>

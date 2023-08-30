@@ -1,0 +1,146 @@
+@import "../components/inputs";
+@import "../base/texts";
+@import "../components/buttons";
+@import "../utils/position";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+input {
+    @include input_gray;
+}
+
+.breadcrumb_container {
+    margin-bottom: 64px;
+}
+
+
+.registration__content {
+    @include centerByMargin;
+    width: $content_width;
+    display: flex;
+    gap: 8vw;
+    margin-bottom: 96px;
+}
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input:nth-of-type(2) {
+        margin-bottom: 11px;
+    }
+
+    .gender_switch {
+        margin-bottom: 13px;
+    }
+
+    input:nth-of-type(4) {
+        margin-bottom: -5px;
+    }
+
+    p.input_rules {
+        margin-bottom: 19px;
+    }
+
+
+
+    h4 {
+        @include h1;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    button {
+        @include button_proceed_red;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        width: 167px;
+        height: 50px;
+
+
+    }
+
+    input[type=radio] {
+        height: initial;
+    }
+
+
+}
+
+.reg_info {
+    @include grayText;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+    h1 {
+        @extend .reg_info;
+    }
+
+    ul {
+        list-style-image: url("../../img/check_mark.svg");
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+}
+
+.swipe {
+    position: relative;
+    &:before {
+      position: absolute;
+    //   top: 0;
+      left: 0;
+      width: 100%;
+      content: attr(data-text);
+    //   transform: translate3d(0, 10px, 0);
+      transition: opacity .2s .25s;
+    }
+    span {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      color: transparent;
+      transition: color 0.25s ease-in-out;
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+    &:hover {
+      &:before {
+        opacity: 0;
+        transition-delay: 0s;
+      }
+      span {
+        color: beige;
+        transition-delay: .75s;
+        &:after {
+          transform: translate3d(100%, 0, 0);
+          transition: transform .75s cubic-bezier(0.7, 0, 0.3, 1) .20s;
+        }
+      }
+    }
+  }
