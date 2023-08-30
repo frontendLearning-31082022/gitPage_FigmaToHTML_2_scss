@@ -1,6 +1,7 @@
 @import "../utils/position";
 @import "../components/buttons";
 @import "../base/texts";
+@import "../components/inputs";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -97,8 +98,7 @@
         }
 
         input {
-            height: 45px;
-            padding-left: 17px;
+            @include input_gray;
         }
 
         button {
@@ -111,6 +111,7 @@
         }
 
         h4 {
+            margin-bottom: 0px;
             margin-bottom: 0px;
         }
 
