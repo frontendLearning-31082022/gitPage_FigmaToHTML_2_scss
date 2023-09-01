@@ -11,15 +11,31 @@ input {
 
 .breadcrumb_container {
     margin-bottom: 64px;
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
 }
 
 
 .registration__content {
     @include centerByMargin;
+
     width: var(--content_width);
     display: flex;
+
     gap: 8vw;
+    @media (max-width: 768px) {
+      gap: 2.86vw;
+    }
+
     margin-bottom: 96px;
+
+    @media (max-width: 768px) {
+      & > div {
+        flex: 1 1 0px;
+      }
+    }
+ 
 }
 
 .reg_form {
@@ -33,6 +49,16 @@ input {
 
     .gender_switch {
         margin-bottom: 13px;
+        @media (min-width: 769px) {
+          #other {
+            display: none;
+          }
+          [for="other"] {
+            display: none;
+          }
+        }
+
+        white-space: nowrap
     }
 
     input:nth-of-type(4) {
@@ -82,8 +108,17 @@ input {
 .reg_info {
     @include grayText;
     font-weight: 300;
+
     font-size: 24px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
     line-height: 29px;
+    @media (max-width: 768px) {
+      font-size: 19px;
+    }
+
     color: #000000;
 
     h1 {
@@ -142,5 +177,11 @@ input {
           transition: transform .75s cubic-bezier(0.7, 0, 0.3, 1) .20s;
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --content_width: 92.97vw;
     }
   }

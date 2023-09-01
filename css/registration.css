@@ -348,6 +348,11 @@ input {
 .breadcrumb_container {
   margin-bottom: 64px;
 }
+@media (max-width: 768px) {
+  .breadcrumb_container {
+    margin-bottom: 40px;
+  }
+}
 
 .registration__content {
   margin: 0 auto;
@@ -355,6 +360,16 @@ input {
   display: flex;
   gap: 8vw;
   margin-bottom: 96px;
+}
+@media (max-width: 768px) {
+  .registration__content {
+    gap: 2.86vw;
+  }
+}
+@media (max-width: 768px) {
+  .registration__content > div {
+    flex: 1 1 0px;
+  }
 }
 
 .reg_form {
@@ -367,6 +382,15 @@ input {
 }
 .reg_form .gender_switch {
   margin-bottom: 13px;
+  white-space: nowrap;
+}
+@media (min-width: 769px) {
+  .reg_form .gender_switch #other {
+    display: none;
+  }
+  .reg_form .gender_switch [for=other] {
+    display: none;
+  }
 }
 .reg_form input:nth-of-type(4) {
   margin-bottom: -5px;
@@ -426,6 +450,16 @@ input {
   line-height: 29px;
   color: #000000;
 }
+@media (max-width: 768px) {
+  .reg_info, .reg_info h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .reg_info, .reg_info h1 {
+    font-size: 19px;
+  }
+}
 .reg_info ul {
   list-style-image: url("../../img/check_mark.svg");
 }
@@ -473,4 +507,10 @@ input {
 .swipe:hover span:after {
   transform: translate3d(100%, 0, 0);
   transition: transform 0.75s cubic-bezier(0.7, 0, 0.3, 1) 0.2s;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content_width: 92.97vw;
+  }
 }/*# sourceMappingURL=registration.css.map */
