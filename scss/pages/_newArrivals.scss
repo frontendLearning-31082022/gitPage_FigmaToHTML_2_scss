@@ -102,7 +102,7 @@
 }
 
 .items {
-    width: $content_width;
+    width: var(--content_width);
     @include centerByMargin;
     margin-bottom: 128px;
 }

@@ -12,7 +12,7 @@
 
 .cart__content {
     @include centerByMargin;
-    width: $content_width;
+    width: var(--content_width);
 
     display: grid;
     grid-template-columns: 57.19% 31.58%;
@@ -210,4 +210,10 @@ div.cart__control_buttons {
         }
     }
 
+}
+
+@media (max-width: 768px) {
+	:root {
+		--content_width: 95,57vw;
+	}
 }

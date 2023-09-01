@@ -37,7 +37,7 @@
 
 .footer__adv_content {
 	@include centerByMargin;
-	width: $content_width;
+	width: var(--content_width);
 	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -76,7 +76,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
-	width: $content_width;
+	width: var(--content_width);
 	text-align: center;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .footer_end_content {
-	width: $content_width;
+	width: var(--content_width);
 	@include centerByMargin;
 	display: flex;
 	justify-content: space-between;
@@ -182,7 +182,7 @@
 
 @media (max-width: 481px) {
 	.footer__adv_content {
-		grid-template-columns: $content_width;
+		grid-template-columns: var(--content_width);;
 	}
 
 	.footer__adv {

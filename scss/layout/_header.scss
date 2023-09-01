@@ -1,4 +1,9 @@
 @import "../utils/position";
+@import "../base/vars";
+
+:root {
+	--content_width: #{$content_width_precompile};
+  }
 
 .header {
 	min-height: 38px;
@@ -25,7 +30,7 @@
 
 .header__navbar_control {
 	@include centerByMargin;
-	width: $content_width;
+	width: var(--content_width);
 	height: inherit;
 	display: flex;
 	position: relative;

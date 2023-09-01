@@ -2,5 +2,5 @@
 
 .content { 
     @include centerByMargin;
-    width: $content_width;
+    width: var(--content_width);
 }

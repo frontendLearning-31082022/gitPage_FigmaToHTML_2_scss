@@ -16,7 +16,7 @@ input {
 
 .registration__content {
     @include centerByMargin;
-    width: $content_width;
+    width: var(--content_width);
     display: flex;
     gap: 8vw;
     margin-bottom: 96px;

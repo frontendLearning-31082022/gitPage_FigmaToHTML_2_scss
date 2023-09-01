@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --content_width: 71.31vw;
+}
+
 .header {
   min-height: 38px;
   position: fixed;
@@ -25,7 +29,7 @@
 
 .header__navbar_control {
   margin: 0 auto;
-  width: 71.31vw;
+  width: var(--content_width);
   height: inherit;
   display: flex;
   position: relative;
@@ -123,7 +127,7 @@ body:before {
 .breadcrumb_content {
   display: flex;
   justify-content: space-between;
-  width: 71.31vw;
+  width: var(--content_width);
   margin: 0 auto;
   height: 100%;
   align-items: center;
@@ -183,7 +187,7 @@ body:before {
 
 .footer__adv_content {
   margin: 0 auto;
-  width: 71.31vw;
+  width: var(--content_width);
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -221,7 +225,7 @@ body:before {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 71.31vw;
+  width: var(--content_width);
   text-align: center;
 }
 
@@ -277,7 +281,7 @@ body:before {
 }
 
 .footer_end_content {
-  width: 71.31vw;
+  width: var(--content_width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -316,7 +320,7 @@ body:before {
 }
 @media (max-width: 481px) {
   .footer__adv_content {
-    grid-template-columns: 71.31vw;
+    grid-template-columns: var(--content_width);
   }
   .footer__adv {
     height: fit-content;
@@ -334,7 +338,7 @@ body:before {
 
 .cart__content {
   margin: 0 auto;
-  width: 71.31vw;
+  width: var(--content_width);
   display: grid;
   grid-template-columns: 57.19% 31.58%;
   column-gap: 11.23%;
@@ -552,4 +556,10 @@ div.cart__control_buttons :first-child:hover {
   background: #E2E2E2;
   display: block;
   margin-bottom: 17px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content_width: 95,57vw;
+  }
 }/*# sourceMappingURL=cart.css.map */
