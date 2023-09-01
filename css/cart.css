@@ -335,6 +335,11 @@ body:before {
 .breadcrumb_container {
   margin-bottom: 96px;
 }
+@media (max-width: 768px) {
+  .breadcrumb_container {
+    margin-bottom: 59px;
+  }
+}
 
 .cart__content {
   margin: 0 auto;
@@ -343,6 +348,12 @@ body:before {
   grid-template-columns: 57.19% 31.58%;
   column-gap: 11.23%;
   margin-bottom: 128px;
+}
+@media (max-width: 768px) {
+  .cart__content {
+    column-gap: 1.95%;
+    grid-template-columns: 49% 49%;
+  }
 }
 
 .cart__items {
@@ -459,9 +470,20 @@ body:before {
 }
 
 div.cart__control_buttons {
-  justify-content: space-between;
   display: flex;
   padding-top: 72px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  div.cart__control_buttons {
+    padding-top: 62px;
+  }
+}
+@media (max-width: 768px) {
+  div.cart__control_buttons {
+    justify-content: center;
+    gap: 48px;
+  }
 }
 div.cart__control_buttons button {
   border: 1px solid #A4A4A4;
@@ -491,6 +513,11 @@ div.cart__control_buttons :last-child:hover {
 }
 div.cart__control_buttons :first-child:hover {
   background-color: rgb(147, 41, 41);
+}
+@media (max-width: 768px) {
+  div.cart__control_buttons {
+    margin-bottom: 64px;
+  }
 }
 
 .cart__summary_bill {
@@ -561,5 +588,11 @@ div.cart__control_buttons :first-child:hover {
 @media (max-width: 768px) {
   :root {
     --content_width: 95,57vw;
+  }
+  .cart__items, .cart__control_buttons {
+    grid-column: span 2;
+  }
+  .cart__control_buttons {
+    order: -1;
   }
 }/*# sourceMappingURL=cart.css.map */
