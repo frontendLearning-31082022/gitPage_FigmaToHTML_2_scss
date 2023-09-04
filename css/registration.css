@@ -115,8 +115,11 @@ body:before {
     justify-content: space-between;
   }
 }
-.breadcrumb > ol > * {
+.breadcrumb ol > * {
   display: inline-block;
+}
+.breadcrumb ol > :last-child * {
+  color: red;
 }
 
 .breadcrumb_container {

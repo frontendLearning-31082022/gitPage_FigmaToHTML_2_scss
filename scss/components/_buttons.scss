@@ -92,3 +92,103 @@
 
     cursor: pointer;
 }
+
+@mixin button_filter {
+
+    .filter {
+
+        &__button {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            background: transparent;
+
+            border: none;
+            cursor: pointer;
+
+            &::after {
+                background-color: #000000;
+                -webkit-mask-image: url("../../img/filter_button.svg");
+                mask-image: url("../../img/filter_button.svg");
+
+                aspect-ratio: 15 / 10;
+                width: 15px;
+
+                content: "";
+                display: inline-block;
+
+                margin-left: 11px;
+            }
+        }
+
+        &__category {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            &_title {
+                color: #EF5B70;
+
+                border: solid;
+                border-width: 0px 0px 1px 5px;
+                border-color: transparent transparent #EBEBEB #EF5B70;
+
+                padding: 6px 0px 12px 16px;
+
+                &::after {
+                    background: #EF5B70;
+                    height: 100%;
+                    width: 5px;
+
+
+                    content: "";
+                    display: inline-block;
+                }
+            }
+
+
+            .filter__item {
+                color: #6F6E6E;
+                margin-left: 16px;
+                margin-bottom: 11px;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            position: absolute;
+            z-index: 100;
+            background: #FFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+            padding: 7px 1px 2px 17px;
+
+            padding-bottom: 16px;
+
+            width: 22.5vw;
+            @media (max-width: 768px) {
+                width: 46.88vw;
+            }
+
+            .filter__button {
+                margin-bottom: 16px;
+                color: #EF5B70;
+                text-align: start;
+
+                &::after {
+                    background-color: #EF5B70;
+                }
+            }
+        }
+
+    }
+
+}

@@ -2,3 +2,10 @@
 @mixin centerByMargin {
     margin: 0 auto
 }
+
+// @import "scss/utils/postion.scss";
+@mixin centerByTranslateX {
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

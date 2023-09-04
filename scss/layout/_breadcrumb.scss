@@ -1,7 +1,13 @@
 @import "../utils/position";
 
-.breadcrumb>ol>* {
-    display: inline-block;
+.breadcrumb ol {
+    &>* {
+        display: inline-block;
+    }
+    & > :last-child * {
+        color: red;
+    }
+  
 }
 
 .breadcrumb_container {
