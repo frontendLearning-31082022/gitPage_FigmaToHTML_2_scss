@@ -526,6 +526,7 @@ div.cart__control_buttons :first-child:hover {
 .cart__summary_bill {
   padding: 39px 34px 42px 44px;
   background: #F5F3F3;
+  height: fit-content;
 }
 .cart__summary_bill .sub_total {
   font-family: "Lato";
