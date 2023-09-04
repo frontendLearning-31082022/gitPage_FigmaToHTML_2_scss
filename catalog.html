@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="/css/catalog.css">
 </head>
 
 <body>
@@ -69,6 +69,46 @@
 
 
     <div class="content">
+
+        <div class="filter">
+            <button class="filter__button" onclick="document.getElementsByClassName('filter__menu')[0].style.display==='' ? document.getElementsByClassName('filter__menu')[0].style.display='none' : document.getElementsByClassName('filter__menu')[0].style.display=''">
+                FILTER
+            </button>
+            <div class="item_customization">
+                <span>CHOOSE COLOR</span>
+                <span>CHOOSE SIZE</span>
+                <span>QUANTITY</span>
+            </div>
+
+            <div class="filter__menu" >
+                <button class="filter__button" onclick="document.getElementsByClassName('filter__menu')[0].style.display==='' ? document.getElementsByClassName('filter__menu')[0].style.display='none' : document.getElementsByClassName('filter__menu')[0].style.display=''">
+                    FILTER
+                </button>
+                <div class="filter__category">
+                    <div class="filter__category_title">CATEGORY</div>
+                    
+                    <div class="filter__item">Accessories</div>
+                    <div class="filter__item">Bags</div>
+                    <div class="filter__item">Denim</div>
+                    <div class="filter__item">Hoodies & Sweatshirts</div>
+                    <div class="filter__item">Jackets & Coats</div>
+                    <div class="filter__item">Polos</div>
+                    <div class="filter__item">Shirts</div>
+                    <div class="filter__item">Shoes</div>
+                    <div class="filter__item">Sweaters & Knits</div>
+                    <div class="filter__item">T-Shirts</div>
+                    <div class="filter__item">Tanks</div>
+                </div>
+                <div class="filter__category">
+                    <div class="filter__category_title">BRAND</div>
+                    </div>
+                <div class="filter__category">
+                    <div class="filter__category_title">DESIGNER</div>
+                    </div>
+            </div>
+
+
+        </div>
 
         <div class="items">
             <div class="item" onclick="location.href='#';">
@@ -143,6 +183,20 @@
                 <p class="price_item">$52.00</p>
             </div>
 
+        </div>
+
+
+        <div class="pagination">
+            <a href="#" class="prev">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <span href="#" class="pagination_range">.....</span>
+            <a href="#">20</a>
+            <a href="#" class="next">&raquo;</a>
         </div>
 
     </div>
