@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 :root {
   --content_width: 71.31vw;
 }
@@ -473,6 +474,7 @@ body:before {
   flex-direction: column;
   /* text-align: center; */
   align-items: center;
+  color: #F16D7F;
 }
 .product_current .group_name::after {
   content: "";
@@ -483,7 +485,7 @@ body:before {
   margin-top: 12.1px;
 }
 .product_current .product_description {
-  margin-bottom: 130px;
+  margin-bottom: 64.5px;
 }
 .product_current .product_description .title {
   font-family: "Lato";
@@ -510,6 +512,7 @@ body:before {
   font-size: 24px;
   line-height: 29px;
   color: #EF5B70;
+  margin-bottom: 64px;
 }
 .product_current .product_description::after {
   content: "";
@@ -517,6 +520,7 @@ body:before {
   background: #EAEAEA;
   display: block;
   aspect-ratio: 64200/101;
+  margin: 0 auto;
 }
 .product_current .item_customization {
   margin-bottom: 46.4px;
@@ -543,4 +547,10 @@ body:before {
   width: var(--content_width);
   margin: 0 auto;
   margin-bottom: 128px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content_width: 95, 57vw;
+  }
 }/*# sourceMappingURL=product.css.map */

@@ -3,6 +3,8 @@
 @import "../components/items";
 @import "../utils/position";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .big_logo__container {
     background-color: #EAEAEA;
     border: 1px solid #EAEAEA;
@@ -14,9 +16,10 @@
 
     .big_logo__btn_prev {
         @include big_logo__btn_prev;
-    }    
+    }
+
     .big_logo__btn_next {
-        @include big_logo__btn_next;    
+        @include big_logo__btn_next;
     }
 
     .big_logo__content,
@@ -35,6 +38,7 @@
         flex-direction: column;
         /* text-align: center; */
         align-items: center;
+        color: #F16D7F;
     }
 
     .group_name::after {
@@ -47,7 +51,7 @@
     }
 
     .product_description {
-        margin-bottom: 130px;
+        margin-bottom: 64.5px;
     }
 
     .product_description .title {
@@ -78,15 +82,18 @@
         font-size: 24px;
         line-height: 29px;
         color: #EF5B70;
+
+        margin-bottom: 64px;
     }
 
-    
+
     .product_description::after {
         content: "";
         width: 642px;
         background: #EAEAEA;
         display: block;
         aspect-ratio: 64200 / 101;
+        margin: 0 auto;
     }
 
     .item_customization {
@@ -97,7 +104,7 @@
         @include btn_add_to_cart;
     }
 
-  
+
 
 }
 
@@ -105,4 +112,10 @@
     width: var(--content_width);
     @include centerByMargin;
     margin-bottom: 128px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --content_width: 95, 57vw;
+    }
 }
