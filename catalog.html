@@ -71,22 +71,46 @@
     <div class="content">
 
         <div class="filter">
-            <button class="filter__button" onclick="document.getElementsByClassName('filter__menu')[0].style.display==='' ? document.getElementsByClassName('filter__menu')[0].style.display='none' : document.getElementsByClassName('filter__menu')[0].style.display=''">
+            <button class="filter__button"
+                onclick="document.getElementsByClassName('filter__menu')[0].style.display==='' ? document.getElementsByClassName('filter__menu')[0].style.display='none' : document.getElementsByClassName('filter__menu')[0].style.display=''">
                 FILTER
             </button>
             <div class="item_customization">
-                <span>CHOOSE COLOR</span>
-                <span>CHOOSE SIZE</span>
-                <span>QUANTITY</span>
+                <span class="item_customization_type">TRENDING NOW</span>
+                <span class="item_customization_type" onclick="document.getElementsByClassName('size_chooser')[0].style.display==='' ? document.getElementsByClassName('size_chooser')[0].style.display='none' : document.getElementsByClassName('size_chooser')[0].style.display=''">SIZE
+                    <div class="item_customization_options size_chooser">
+                        <div>
+                            <input type="checkbox" id="size_XS" name="size_XS" />
+                            <label for="size_XS">XS</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="size_S" name="size_S" />
+                            <label for="size_S">S</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="size_M" name="size_M" />
+                            <label for="size_M">M</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="size_L" name="size_L" />
+                            <label for="size_L">L</label>
+                        </div>
+                    </div>
+                </span>
+                <span class="item_customization_type">PRICE</span>
             </div>
 
-            <div class="filter__menu" >
-                <button class="filter__button" onclick="document.getElementsByClassName('filter__menu')[0].style.display==='' ? document.getElementsByClassName('filter__menu')[0].style.display='none' : document.getElementsByClassName('filter__menu')[0].style.display=''">
+            <div class="filter__menu">
+                <button class="filter__button"
+                    onclick="document.getElementsByClassName('filter__menu')[0].style.display==='' ? document.getElementsByClassName('filter__menu')[0].style.display='none' : document.getElementsByClassName('filter__menu')[0].style.display=''">
                     FILTER
                 </button>
                 <div class="filter__category">
                     <div class="filter__category_title">CATEGORY</div>
-                    
+
                     <div class="filter__item">Accessories</div>
                     <div class="filter__item">Bags</div>
                     <div class="filter__item">Denim</div>
@@ -101,10 +125,10 @@
                 </div>
                 <div class="filter__category">
                     <div class="filter__category_title">BRAND</div>
-                    </div>
+                </div>
                 <div class="filter__category">
                     <div class="filter__category_title">DESIGNER</div>
-                    </div>
+                </div>
             </div>
 
 
@@ -187,7 +211,7 @@
 
 
         <div class="pagination">
-            <a href="#" class="prev">&laquo;</a>
+            <a href="#" class="prev"><</a>
             <a class="active" href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
@@ -196,7 +220,7 @@
             <a href="#">6</a>
             <span href="#" class="pagination_range">.....</span>
             <a href="#">20</a>
-            <a href="#" class="next">&raquo;</a>
+            <a href="#" class="next">></a>
         </div>
 
     </div>
