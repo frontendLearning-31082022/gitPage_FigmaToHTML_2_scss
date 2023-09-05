@@ -23,9 +23,16 @@ input {
     width: var(--content_width);
     display: flex;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     gap: 8vw;
     @media (max-width: 768px) {
       gap: 2.86vw;
+    }
+    @media (max-width: 481px) {
+      gap: 40px;
     }
 
     margin-bottom: 96px;
