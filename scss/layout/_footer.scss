@@ -8,31 +8,31 @@
 
 
 .footer__adv_item>h3 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19.96px;
+	line-height: 24px;
+	color: #FBFBFB;
 }
 
 .footer__adv_item>p {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-    color: #FBFBFB;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 13.972px;
+	line-height: 17px;
+	color: #FBFBFB;
 }
 
 
 .footer_end_content h4 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FBFBFB;
 }
 
 .footer__adv_content {
@@ -82,16 +82,47 @@
 	text-align: center;
 }
 
-.subscribe_content>.subscribe_action {
+
+
+.subscribe_action {
 	margin-right: 6.06vw;
 	padding: 150px 0px 156px 0px;
+
+	h1 {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 162%;
+		color: #222224;
+	}
+
+	h3 {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 162%;
+		color: #222224;
+	}
 }
+
 
 .subscribe_content>.about {
 	max-height: 225px;
 	max-width: 359px;
 	text-align: center;
 	padding: 97px 0px 126px 0px;
+
+	p {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #222224;
+	}
 }
 
 .subscribe_form {
@@ -117,8 +148,16 @@
 	width: 65.45%;
 	margin-left: 6.18%;
 	background: inherit;
-    border: none;
+	border: none;
 	outline: none;
+
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #222224;
+	opacity: 0.67;
 }
 
 .subscribe_form form {
@@ -184,7 +223,7 @@
 
 @media (max-width: 481px) {
 	.footer__adv_content {
-		grid-template-columns: var(--content_width);;
+		grid-template-columns: var(--content_width);
 	}
 
 	.footer__adv {

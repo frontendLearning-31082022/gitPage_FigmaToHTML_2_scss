@@ -39,7 +39,12 @@
 
     display: inline-flex;
     gap: 18px;
+
     margin-bottom: 96px;
+    @media (max-width: 768px) {
+        margin-bottom: 63px;
+    }
+
     padding: 12px 16px 13px 16px;
 
     border: 1px solid #EBEBEB;
@@ -67,8 +72,28 @@
     }
 
     @include button_filter;
+    @media (max-width: 481px) {
+        .filter__button {
+            visibility: hidden;
+            position: relative;
+            &::after {
+                visibility: visible;
+                position: absolute;
+                left: 0px;
+                width: 37px;
+                height: 25px;
+            }
+        }
+    }
+
 
     display: flex;
     margin-bottom: 64px;
 
+}
+
+@media (max-width: 768px) {
+    :root {
+		--content_width: 95.83vw;
+	}
 }

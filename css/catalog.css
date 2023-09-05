@@ -234,9 +234,25 @@ body:before {
   text-align: center;
 }
 
-.subscribe_content > .subscribe_action {
+.subscribe_action {
   margin-right: 6.06vw;
   padding: 150px 0px 156px 0px;
+}
+.subscribe_action h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 162%;
+  color: #222224;
+}
+.subscribe_action h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 162%;
+  color: #222224;
 }
 
 .subscribe_content > .about {
@@ -244,6 +260,15 @@ body:before {
   max-width: 359px;
   text-align: center;
   padding: 97px 0px 126px 0px;
+}
+.subscribe_content > .about p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
 }
 
 .subscribe_form {
@@ -271,6 +296,13 @@ body:before {
   background: inherit;
   border: none;
   outline: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
 }
 
 .subscribe_form form {
@@ -477,6 +509,11 @@ body:before {
 .pagination_range {
   margin: 0px -18px 0px -18px;
 }
+@media (max-width: 768px) {
+  .pagination {
+    margin-bottom: 63px;
+  }
+}
 .pagination .next, .pagination .prev {
   color: #000000;
 }
@@ -513,6 +550,7 @@ body:before {
   background-color: #000000;
   -webkit-mask-image: url("../../img/filter_button.svg");
   mask-image: url("../../img/filter_button.svg");
+  mask-size: cover;
   aspect-ratio: 15/10;
   width: 15px;
   content: "";
@@ -569,4 +607,23 @@ body:before {
 }
 .filter .filter__menu .filter__button::after {
   background-color: #EF5B70;
+}
+@media (max-width: 481px) {
+  .filter .filter__button {
+    visibility: hidden;
+    position: relative;
+  }
+  .filter .filter__button::after {
+    visibility: visible;
+    position: absolute;
+    left: 0px;
+    width: 37px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content_width: 95.83vw;
+  }
 }/*# sourceMappingURL=catalog.css.map */
