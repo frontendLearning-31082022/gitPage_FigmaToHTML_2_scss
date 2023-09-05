@@ -163,6 +163,7 @@ body:before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .subscribe {
@@ -292,6 +293,8 @@ body:before {
   }
   .footer_end_content {
     justify-content: center;
+    flex-direction: column-reverse;
+    padding-top: 43px;
   }
 }
 .content {
@@ -303,6 +306,10 @@ body:before {
   --height_big_logo: 47.75vh;
 }
 
+.content {
+  margin-bottom: 95px;
+}
+
 .big_adv_text {
   font-family: "Lato";
   font-style: normal;
@@ -310,12 +317,17 @@ body:before {
   font-size: 48px;
   line-height: 30px;
   color: #222222;
+  border: solid;
+  border-width: 0px 0px 0px 12px;
+  border-color: transparent transparent #EBEBEB #EF5B70;
+  padding-left: 16px;
 }
-
+.big_adv_text1 {
+  line-height: 39px;
+}
 .big_adv_text2 {
   font-size: 32px;
 }
-
 .big_adv_text3 {
   color: #F16D7F;
 }
@@ -338,6 +350,12 @@ body:before {
 
 .feature_items .info {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .feature_items .info {
+    margin-top: 155px;
+    margin-bottom: 93px;
+  }
 }
 .feature_items .info > h1 {
   font-family: "Lato";
@@ -364,6 +382,9 @@ body:before {
   line-height: 17px;
   color: #9F9F9F;
 }
+.feature_items .item {
+  background: #F8F8F8;
+}
 .feature_items .item p.descrp_item {
   font-family: "Lato";
   font-style: normal;
@@ -389,6 +410,7 @@ body:before {
   line-height: 19px;
   color: #F26376;
   cursor: pointer;
+  background: white;
 }
 
 .footer__adv_item > h3 {
@@ -643,10 +665,6 @@ body:before {
   height: inherit;
 }
 
-.big_adv_text {
-  margin-left: 1vw;
-}
-
 .big_logo_right a {
   display: flex;
   margin-top: calc(var(--height_big_logo) * 0.378);
@@ -787,6 +805,7 @@ body:before {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.88vw;
+  margin-bottom: 48px;
 }
 
 .item {
@@ -809,7 +828,6 @@ body:before {
   height: 3vh;
   min-height: 48px;
   display: block;
-  margin-bottom: 3.75vh;
 }
 
 @media (max-width: 768px) {
@@ -996,7 +1014,7 @@ body:before {
   content: "Add to Cart";
   top: 45%;
   position: absolute;
-  left: 25%;
+  left: 34%;
   border: white;
   border: 1px solid white;
   font-family: "Lato";
@@ -1007,10 +1025,11 @@ body:before {
   color: #FFFFFF;
   display: none;
   cursor: pointer;
-  background-image: url(img/shop_cart.svg);
+  background-image: url(/img/shop_cart.svg);
   background-repeat: no-repeat;
-  background-position: 5% 40%;
+  background-position: 9% 50%;
   padding: 5% 5% 5% 15%;
+  background-size: 30%;
 }
 
 .item_image:hover::after {

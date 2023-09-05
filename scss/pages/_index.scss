@@ -3,6 +3,10 @@
 }
 
 
+.content {
+	margin-bottom: 95px;
+}
+
 .big_adv_text {
     font-family: 'Lato';
     font-style: normal;
@@ -10,14 +14,22 @@
     font-size: 48px;
     line-height: 30px;
     color: #222222;
-}
 
-.big_adv_text2 {
-    font-size: 32px;
-}
+	border: solid;
+	border-width: 0px 0px 0px 12px;
+	border-color: transparent transparent #EBEBEB #EF5B70;
+	padding-left: 16px;
 
-.big_adv_text3 {
-    color: #F16D7F;
+	&1{
+		line-height: 39px;
+	} 
+	&2{
+		 font-size: 32px;
+	}
+	&3 {
+		color: #F16D7F;
+	}
+	  
 }
 
 .category {
@@ -43,6 +55,10 @@
 .feature_items {
     .info {
         text-align: center;
+		@media (max-width: 768px) {
+			margin-top: 155px;
+			margin-bottom: 93px;
+		}
     }
 
     .info > h1 {
@@ -73,7 +89,9 @@
     }
     
 
+
     .item {
+		background: #F8F8F8;
         p.descrp_item {
             font-family: 'Lato';
             font-style: normal;
@@ -101,6 +119,7 @@
         line-height: 19px;
         color: #F26376;
         cursor: pointer;
+		background: white;
     }
 
 
@@ -377,9 +396,7 @@ body:before {
 	height: inherit;
 }
 
-.big_adv_text {
-	margin-left: 1vw;
-}
+
 
 .big_logo_right a {
 	display: flex;
@@ -540,6 +557,8 @@ body:before {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1.88vw;
+
+	margin-bottom: 48px;
 }
 
 .item {
@@ -563,7 +582,6 @@ body:before {
 	height: 3vh;
 	min-height: 48px;
 	display: block;
-	margin-bottom: 3.75vh;
 }
 
 @media (max-width: 768px) {
@@ -773,7 +791,7 @@ body:before {
 	content: 'Add to Cart';
 	top: 45%;
 	position: absolute;
-	left: 25%;
+	left: 34%;
 	border: white;
 	border: 1px solid white;
 	font-family: 'Lato';
@@ -784,10 +802,11 @@ body:before {
 	color: #FFFFFF;
 	display: none;
 	cursor: pointer;
-	background-image: url(img/shop_cart.svg);
+	background-image: url(/img/shop_cart.svg);
 	background-repeat: no-repeat;
-	background-position: 5% 40%;
+	background-position: 9% 50%;
 	padding: 5% 5% 5% 15%;
+	background-size: 30%;
 }
 
 .item_image:hover::after {

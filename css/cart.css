@@ -204,6 +204,7 @@ body:before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .subscribe {
@@ -333,6 +334,8 @@ body:before {
   }
   .footer_end_content {
     justify-content: center;
+    flex-direction: column-reverse;
+    padding-top: 43px;
   }
 }
 .breadcrumb_container {
