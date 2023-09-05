@@ -135,6 +135,14 @@ body:before {
   height: 100%;
   align-items: center;
 }
+@media (max-width: 481px) {
+  .breadcrumb_content {
+    flex-direction: column;
+  }
+  .breadcrumb_content ol {
+    padding: 0px;
+  }
+}
 
 .breadcrumb_current {
   font-family: "Lato";

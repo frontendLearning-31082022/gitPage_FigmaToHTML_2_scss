@@ -6,11 +6,37 @@
 
 .item {
 	aspect-ratio: 360/587;
+	background: #F8F8F8;
 
 	&_image {
 		background-size: cover;
 		width: 100%;
 		aspect-ratio: 360 / 420;
+	}
+
+	h5,
+	p {
+		padding: 0% 8% 0% 4%;
+
+		font-family: 'Lato';
+		font-style: normal;
+	}
+
+	h5 {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+		color: #000000;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #5D5D5D;
+		&.price_item {
+			color: #F16D7F;
+		}
 	}
 }
 
@@ -18,9 +44,7 @@
 	max-width: 100%;
 }
 
-.price_item {
-	color: #F16D7F;
-}
+
 
 .btn_show_all_items {
 	width: 13.25vw;

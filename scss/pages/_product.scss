@@ -14,6 +14,8 @@
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 64.5px;
+
     .big_logo__btn_prev {
         @include big_logo__btn_prev;
     }
@@ -52,6 +54,9 @@
 
     .product_description {
         margin-bottom: 64.5px;
+        @media (max-width: 481px) {
+            margin-bottom: 49px;
+        }
     }
 
     .product_description .title {
@@ -84,6 +89,9 @@
         color: #EF5B70;
 
         margin-bottom: 64px;
+        @media (max-width: 481px) {
+            margin-bottom: 32px;
+        }
     }
 
 
@@ -116,6 +124,6 @@
 
 @media (max-width: 768px) {
     :root {
-        --content_width: 95, 57vw;
+        --content_width: 95.57vw;
     }
 }

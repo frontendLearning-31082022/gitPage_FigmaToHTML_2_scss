@@ -18,6 +18,14 @@
 .breadcrumb_content {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 481px) {
+        flex-direction: column;
+        ol {
+            padding: 0px;
+        }
+    }
+
     width: var(--content_width);
     @include centerByMargin;
     height: 100%;

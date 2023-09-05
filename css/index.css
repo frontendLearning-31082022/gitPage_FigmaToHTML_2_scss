@@ -414,9 +414,6 @@ body:before {
   line-height: 17px;
   color: #9F9F9F;
 }
-.feature_items .item {
-  background: #F8F8F8;
-}
 .feature_items .item p.descrp_item {
   font-family: "Lato";
   font-style: normal;
