@@ -203,6 +203,7 @@ body:before {
 .subscribe_action {
   margin-right: 6.06vw;
   padding: 150px 0px 156px 0px;
+  min-width: 207px;
 }
 .subscribe_action h1 {
   font-family: "Lato";
@@ -247,7 +248,7 @@ body:before {
 
 .subscribe_form {
   width: 100%;
-  aspect-ratio: 356/49;
+  height: 49px;
   background: #E1E1E1;
   border-radius: 162px;
   overflow: hidden;
