@@ -20,7 +20,6 @@ body {
   height: inherit;
   min-height: inherit;
   top: inherit;
-  transform: translate(-1%);
 }
 .header__navbar {
   width: 100%;
@@ -150,6 +149,7 @@ body:before {
 }
 @media (max-width: 481px) {
   .breadcrumb_content {
+    justify-content: center;
     flex-direction: column;
   }
   .breadcrumb_content ol {
@@ -476,7 +476,7 @@ body:before {
   padding: 22px 50px 10px 31px;
 }
 .cart__items .cart__item_button_remove {
-  background-image: url("../../img/btn_remove.svg");
+  background-image: url("./../img/btn_remove.svg");
   border: none;
   background-repeat: no-repeat;
   background-position: center;

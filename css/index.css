@@ -20,7 +20,6 @@ body {
   height: inherit;
   min-height: inherit;
   top: inherit;
-  transform: translate(-1%);
 }
 .header__navbar {
   width: 100%;
@@ -974,7 +973,7 @@ body:before {
   color: #FFFFFF;
   display: none;
   cursor: pointer;
-  background-image: url(/img/shop_cart.svg);
+  background-image: url(./img/shop_cart.svg);
   background-repeat: no-repeat;
   background-position: 9% 50%;
   padding: 5% 5% 5% 15%;

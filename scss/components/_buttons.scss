@@ -8,7 +8,7 @@
     line-height: 17px;
     color: #F26376;
     background-color: #fbfbfb;
-    background-image: url("../../img/shop_cart.svg");
+    background-image: url("./../img/shop_cart.svg");
     background-repeat: no-repeat;
     background-size: 26px 24px;
     // background-size: cover;
@@ -18,7 +18,7 @@
 }
 
 @mixin big_logo__btn_prev {
-    background-image: url("../../img/big_logo__btn_prev.svg");
+    background-image: url("./../img/big_logo__btn_prev.svg");
     background-color: rgba(42, 42, 42, 0.15);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
@@ -33,7 +33,7 @@
 }
 
 @mixin big_logo__btn_next {
-    background-image: url("../../img/big_logo__btn_next.svg");
+    background-image: url("./../img/big_logo__btn_next.svg");
     background-color: rgba(42, 42, 42, 0.15);
     background-repeat: no-repeat;
     background-position: center;
@@ -47,7 +47,7 @@
 }
 
 @mixin button_remove {
-    background-image: url("../../img/btn_remove.svg");
+    background-image: url("./../img/btn_remove.svg");
     border: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,8 +104,8 @@
 
             &::after {
                 background-color: #000000;
-                -webkit-mask-image: url("../../img/filter_button.svg");
-                mask-image: url("../../img/filter_button.svg");
+                -webkit-mask-image: url("./../img/filter_button.svg");
+                mask-image: url("./../img/filter_button.svg");
                 mask-size: cover;
 
                 aspect-ratio: 15 / 10;

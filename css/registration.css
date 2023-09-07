@@ -20,7 +20,6 @@ body {
   height: inherit;
   min-height: inherit;
   top: inherit;
-  transform: translate(-1%);
 }
 .header__navbar {
   width: 100%;
@@ -150,6 +149,7 @@ body:before {
 }
 @media (max-width: 481px) {
   .breadcrumb_content {
+    justify-content: center;
     flex-direction: column;
   }
   .breadcrumb_content ol {
@@ -545,7 +545,7 @@ input {
   }
 }
 .reg-form__reg-info ul {
-  list-style-image: url("../../img/check_mark.svg");
+  list-style-image: url("./../img/check_mark.svg");
 }
 .reg-form__reg-info ul li {
   margin-bottom: 10px;
