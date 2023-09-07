@@ -619,6 +619,16 @@ body:before {
   line-height: 17px;
   color: #5E5E5E;
 }
+@media (max-width: 768px) {
+  .product_current .product_description .descrp_full {
+    width: 77.4%;
+  }
+}
+@media (max-width: 481px) {
+  .product_current .product_description .descrp_full {
+    width: 86%;
+  }
+}
 .product_current .price {
   font-family: "Lato";
   font-style: normal;
@@ -635,7 +645,7 @@ body:before {
 }
 .product_current .product_description::after {
   content: "";
-  width: 642px;
+  width: 100%;
   background: #EAEAEA;
   display: block;
   aspect-ratio: 64200/101;

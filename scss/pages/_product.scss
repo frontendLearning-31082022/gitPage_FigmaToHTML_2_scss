@@ -70,6 +70,13 @@
 
     .product_description .descrp_full {
         width: 555px;
+        @media (max-width: 768px) {
+            width: 77.4%;
+        }
+        @media (max-width: 481px) {
+            width: 86%;
+        }
+
         display: inline-block;
 
         font-family: 'Lato';
@@ -97,7 +104,7 @@
 
     .product_description::after {
         content: "";
-        width: 642px;
+        width: 100%;
         background: #EAEAEA;
         display: block;
         aspect-ratio: 64200 / 101;
