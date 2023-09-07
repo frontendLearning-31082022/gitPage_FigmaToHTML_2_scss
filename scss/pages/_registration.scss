@@ -6,18 +6,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 input {
-    @include input_gray;
+  @include input_gray;
 }
 
 .breadcrumb_container {
-    margin-bottom: 64px;
-    @media (max-width: 768px) {
-      margin-bottom: 40px;
-    }
+  margin-bottom: 64px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 
-.registration__content {
+.registration {
+
+  &__content {
     @include centerByMargin;
 
     width: var(--content_width);
@@ -28,9 +31,11 @@ input {
     }
 
     gap: 8vw;
+
     @media (max-width: 768px) {
       gap: 2.86vw;
     }
+
     @media (max-width: 481px) {
       gap: 40px;
     }
@@ -38,157 +43,173 @@ input {
     margin-bottom: 96px;
 
     @media (max-width: 768px) {
-      & > div {
+      &>div {
         flex: 1 1 0px;
       }
     }
- 
-}
+  }
 
-.reg_form {
+
+  &__reg-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     input:nth-of-type(2) {
-        margin-bottom: 11px;
+      margin-bottom: 11px;
     }
 
-    .gender_switch {
-        margin-bottom: 13px;
-        @media (min-width: 769px) {
-          #other {
-            display: none;
-          }
-          [for="other"] {
-            display: none;
-          }
+    .gender-switch {
+      margin-bottom: 13px;
+
+      @media (min-width: 769px) {
+        #other {
+          display: none;
         }
 
-        white-space: nowrap
+        [for="other"] {
+          display: none;
+        }
+      }
+
+      white-space: nowrap
     }
 
     input:nth-of-type(4) {
-        margin-bottom: -5px;
+      margin-bottom: -5px;
     }
 
-    p.input_rules {
-        margin-bottom: 19px;
+    .reg-form__input-rules {
+      margin-bottom: 19px;
     }
 
 
 
     h4 {
-        @include h1;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
+      @include h1;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
     }
 
     p {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 16px;
-        color: #B1B1B1;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
     }
 
     button {
-        @include button_proceed_red;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        width: 167px;
-        height: 50px;
+      @include button_proceed_red;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      width: 167px;
+      height: 50px;
 
 
     }
 
     input[type=radio] {
-        height: initial;
+      height: initial;
     }
+
+
+  }
 
 
 }
 
-.reg_info {
+.reg-form {
+  &__reg-info {
     @include grayText;
     font-weight: 300;
-
+  
     font-size: 24px;
+  
     @media (max-width: 768px) {
       font-size: 16px;
     }
-
+  
     line-height: 29px;
+  
     @media (max-width: 768px) {
       font-size: 19px;
     }
-
+  
     color: #000000;
-
+  
     h1 {
-        @extend .reg_info;
+      @extend .reg-form__reg-info;
     }
-
+  
     ul {
-        list-style-image: url("../../img/check_mark.svg");
+      list-style-image: url("../../img/check_mark.svg");
     }
-
+  
     ul li {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
+  }
 }
 
+
 .swipe {
-    position: relative;
-    &:before {
-      position: absolute;
+  position: relative;
+
+  &:before {
+    position: absolute;
     //   top: 0;
-      left: 0;
-      width: 100%;
-      content: attr(data-text);
+    left: 0;
+    width: 100%;
+    content: attr(data-text);
     //   transform: translate3d(0, 10px, 0);
-      transition: opacity .2s .25s;
-    }
-    span {
-      position: relative;
-      overflow: hidden;
-      display: block;
-      width: 95%;
-      margin: 0 auto;
-      color: transparent;
-      transition: color 0.25s ease-in-out;
-      &:after {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 2px;
-        background: white;
-        transform: translate3d(-100%, 0, 0);
-      }
-    }
-    &:hover {
-      &:before {
-        opacity: 0;
-        transition-delay: 0s;
-      }
-      span {
-        color: beige;
-        transition-delay: .75s;
-        &:after {
-          transform: translate3d(100%, 0, 0);
-          transition: transform .75s cubic-bezier(0.7, 0, 0.3, 1) .20s;
-        }
-      }
+    transition: opacity .2s .25s;
+  }
+
+  span {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    color: transparent;
+    transition: color 0.25s ease-in-out;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: white;
+      transform: translate3d(-100%, 0, 0);
     }
   }
 
-  @media (max-width: 768px) {
-    :root {
-      --content_width: 92.97vw;
+  &:hover {
+    &:before {
+      opacity: 0;
+      transition-delay: 0s;
+    }
+
+    span {
+      color: beige;
+      transition-delay: .75s;
+
+      &:after {
+        transform: translate3d(100%, 0, 0);
+        transition: transform .75s cubic-bezier(0.7, 0, 0.3, 1) .20s;
+      }
     }
   }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content_width: 92.97vw;
+  }
+}

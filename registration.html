@@ -25,29 +25,31 @@
 
 
     <div class="registration__content">
-        <div class="reg_form">
-            <h4>Your Name</h4>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <div class="gender_switch">
+        <div class="registration__reg-form">
+            <h4 class="reg-form__h4">Your Name</h4>
+            <input class="reg-form__input_first-name" type="text" placeholder="First Name">
+            <input class="reg-form__input_last-name" type="text" placeholder="Last Name">
+            <div class="gender-switch reg-form__gender-switch">
                 <form>
-                    <input type="radio" id="male" name="gender" value="Male">
+                    <input class="gender-switch__input_male" type="radio" id="male" name="gender" value="Male">
                     <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="Female">
+                    <input class="gender-switch__input_female" type="radio" id="female" name="gender" value="Female">
                     <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="Other">
+                    <input class="gender-switch__input_other" type="radio" id="other" name="gender" value="Other">
                     <label for="other">Other</label>
                 </form>
             </div>
             <h4>Login details</h4>
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Password">
-            <p class="input_rules">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-            <button class="swipe" data-text="JOIN NOW    →"><span>JOIN NOW</span></button>
+            <input class="reg-form__input_email" type="text" placeholder="Email">
+            <input class="reg-form__input_password" type="text" placeholder="Password">
+            <p class="reg-form__input-rules">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+                and lowercase letters</p>
+            <button class="reg-form__button swipe" data-text="JOIN NOW    →"><span>JOIN NOW</span></button>
         </div>
-        <div class="reg_info">
+        <div class="reg-form__reg-info">
             <h1>LOYALTY HAS ITS PERKS</h1>
-            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+                soon as you join:</p>
             <ul>
                 <li>15% off welcome offer</li>
                 <li>Free shipping, returns and exchanges on all orders</li>

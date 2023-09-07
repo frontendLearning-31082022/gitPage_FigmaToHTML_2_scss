@@ -456,34 +456,33 @@ input {
     flex: 1 1 0px;
   }
 }
-
-.reg_form {
+.registration__reg-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.reg_form input:nth-of-type(2) {
+.registration__reg-form input:nth-of-type(2) {
   margin-bottom: 11px;
 }
-.reg_form .gender_switch {
+.registration__reg-form .gender-switch {
   margin-bottom: 13px;
   white-space: nowrap;
 }
 @media (min-width: 769px) {
-  .reg_form .gender_switch #other {
+  .registration__reg-form .gender-switch #other {
     display: none;
   }
-  .reg_form .gender_switch [for=other] {
+  .registration__reg-form .gender-switch [for=other] {
     display: none;
   }
 }
-.reg_form input:nth-of-type(4) {
+.registration__reg-form input:nth-of-type(4) {
   margin-bottom: -5px;
 }
-.reg_form p.input_rules {
+.registration__reg-form .reg-form__input-rules {
   margin-bottom: 19px;
 }
-.reg_form h4 {
+.registration__reg-form h4 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -494,7 +493,7 @@ input {
   font-size: 16px;
   line-height: 19px;
 }
-.reg_form p {
+.registration__reg-form p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -502,7 +501,7 @@ input {
   line-height: 16px;
   color: #B1B1B1;
 }
-.reg_form button {
+.registration__reg-form button {
   background: #F16D7F;
   font-family: "Lato";
   font-style: normal;
@@ -519,11 +518,11 @@ input {
   width: 167px;
   height: 50px;
 }
-.reg_form input[type=radio] {
+.registration__reg-form input[type=radio] {
   height: initial;
 }
 
-.reg_info, .reg_info h1 {
+.reg-form__reg-info, .reg-form__reg-info h1 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -536,19 +535,19 @@ input {
   color: #000000;
 }
 @media (max-width: 768px) {
-  .reg_info, .reg_info h1 {
+  .reg-form__reg-info, .reg-form__reg-info h1 {
     font-size: 16px;
   }
 }
 @media (max-width: 768px) {
-  .reg_info, .reg_info h1 {
+  .reg-form__reg-info, .reg-form__reg-info h1 {
     font-size: 19px;
   }
 }
-.reg_info ul {
+.reg-form__reg-info ul {
   list-style-image: url("../../img/check_mark.svg");
 }
-.reg_info ul li {
+.reg-form__reg-info ul li {
   margin-bottom: 10px;
 }
 
