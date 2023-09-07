@@ -110,6 +110,7 @@
 
     .btn_add_to_cart {
         @include btn_add_to_cart;
+        cursor: pointer;
     }
 
 

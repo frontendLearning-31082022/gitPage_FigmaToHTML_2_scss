@@ -187,7 +187,7 @@ div.cart__control_buttons {
 
 .cart__summary_bill {
 
-    padding: 39px 34px 42px 44px;
+    padding: 10.8% 9.4% 11.7% 12.2%;
     background: #F5F3F3;
     height: fit-content;
 
@@ -224,6 +224,7 @@ div.cart__control_buttons {
 
         &>button {
             @include button_proceed_red;
+            padding: 5.5% 15.7% 5.9% 15%;
 
             &:hover {
                 background: linear-gradient(to right, #603813, #b29f94);
