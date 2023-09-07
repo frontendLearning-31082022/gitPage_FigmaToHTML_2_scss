@@ -77,7 +77,7 @@
             </button>
             <div class="item_customization">
                 <span class="item_customization_type">TRENDING NOW</span>
-                <span class="item_customization_type" onclick="document.getElementsByClassName('size_chooser')[0].style.display==='' ? document.getElementsByClassName('size_chooser')[0].style.display='none' : document.getElementsByClassName('size_chooser')[0].style.display=''">SIZE
+                <div class="item_customization_type" onclick="document.getElementsByClassName('size_chooser')[0].style.display==='' ? document.getElementsByClassName('size_chooser')[0].style.display='none' : document.getElementsByClassName('size_chooser')[0].style.display=''">SIZE
                     <div class="item_customization_options size_chooser">
                         <div>
                             <input type="checkbox" id="size_XS" name="size_XS" />
@@ -99,7 +99,7 @@
                             <label for="size_L">L</label>
                         </div>
                     </div>
-                </span>
+                </div>
                 <span class="item_customization_type">PRICE</span>
             </div>
 
@@ -211,14 +211,14 @@
 
 
         <div class="pagination">
-            <a href="#" class="prev"><</a>
+            <a href="#" class="prev">&lt;</a>
             <a class="active" href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
             <a href="#">6</a>
-            <span href="#" class="pagination_range">.....</span>
+            <span class="pagination_range">.....</span>
             <a href="#">20</a>
             <a href="#" class="next">></a>
         </div>
